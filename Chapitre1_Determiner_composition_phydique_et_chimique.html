@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de Révision - Déterminer la Composition d'un Système</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        padding: 40px;
+    }
+
+    h1 {
+        color: #667eea;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background: #667eea;
+        margin: 30px 0;
+    }
+
+    h2 {
+        color: #764ba2;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+    }
+
+    h3 {
+        color: #667eea;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    h4 {
+        color: #764ba2;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .formula-box {
+        background: #f0f4ff;
+        border-left: 5px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .explanation {
+        background: #fafafa;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #764ba2;
+    }
+
+    .explanation strong {
+        color: #667eea;
+    }
+
+    .attention {
+        background: #fff3cd;
+        border-left: 5px solid #ff9800;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .attention strong {
+        color: #ff9800;
+    }
+
+    .example {
+        background: #e8f5e9;
+        border-left: 5px solid #4caf50;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .analogy {
+        background: #e3f2fd;
+        border-left: 5px solid #2196f3;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .tips {
+        background: #f3e5f5;
+        border-left: 5px solid #9c27b0;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .tips h3 {
+        color: #9c27b0;
+        margin-top: 0;
+    }
+
+    .tip-item {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .tip-item::before {
+        content: "✓ ";
+        color: #9c27b0;
+        font-weight: bold;
+        margin-left: -20px;
+        margin-right: 8px;
+    }
+
+    .note {
+        background: #fff9e6;
+        border-left: 4px solid #fbc02d;
+        padding: 10px 12px;
+        margin: 8px 0;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .chapter-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #667eea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .method-box {
+        background: #fce4ec;
+        border-left: 5px solid #e91e63;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+    }
+
+    .method-box strong {
+        color: #c2185b;
+    }
+
+    .key-concept {
+        background: #ffe0b2;
+        border-left: 5px solid #ff6f00;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .key-concept strong {
+        color: #e65100;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+    }
+
+    li {
+        margin: 8px 0;
+        line-height: 1.6;
+    }
+
+    .procedure {
+        background: #e0f2f1;
+        border-left: 5px solid #009688;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .procedure strong {
+        color: #00695c;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <h1>📚 FICHE DE RÉVISION : DÉTERMINER LA COMPOSITION D'UN SYSTÈME</h1>
+        <p class="subtitle">Niveau : Terminale Générale - Spécialité Physique-Chimie</p>
+
+```
+    <hr>
+
+    <!-- Section I -->
+    <h2><span class="chapter-number">I</span>Méthodes Physiques (Non Destructives)</h2>
+
+    <p>Ces méthodes permettent de trouver une concentration <strong>sans modifier chimiquement</strong> la solution.</p>
+
+    <h3>1️⃣ Spectrophotométrie (Loi de Beer-Lambert)</h3>
+    <p>Utilisée pour les espèces <strong>colorées</strong> (absorbant dans l'UV-Visible). L'absorbance est proportionnelle à la concentration.</p>
+
+    <div class="formula-box">
+        A = ε × l × C
+    </div>
+
+    <div class="explanation">
+        <strong>A</strong> = absorbance (sans unité, entre 0 et 1)<br>
+        <strong>ε (epsilon)</strong> = coefficient d'extinction molaire (L·mol⁻¹·cm⁻¹) — <em>propriété du composé</em><br>
+        <strong>l</strong> = longueur de la cuve traversée (cm) — <em>généralement 1 cm</em><br>
+        <strong>C</strong> = concentration molaire (mol·L⁻¹)
+    </div>
+
+    <div class="analogy">
+        Plus la solution est concentrée en composé coloré, plus elle absorbe de lumière (plus A est grand).
+    </div>
+
+    <h4>📊 Déterminer une concentration inconnue :</h4>
+    <div class="procedure">
+        <strong>1. Tracer une courbe d'étalonnage</strong> A = f(C) à l'aide de solutions étalons de concentration connue → obtenir une <strong>droite passant par l'origine</strong><br>
+        <strong>2. Mesurer l'absorbance</strong> de la solution inconnue<br>
+        <strong>3. Reporter sur la droite</strong> pour lire la concentration correspondante
+    </div>
+
+    <hr>
+
+    <h3>2️⃣ Conductimétrie (Loi de Kohlrausch)</h3>
+    <p>Utilisée pour les solutions <strong>contenant des ions</strong>. La conductivité σ est proportionnelle à la concentration des ions.</p>
+
+    <div class="formula-box">
+        σ = Σ (λᵢ × [Xᵢ])
+    </div>
+
+    <div class="explanation">
+        <strong>σ (sigma)</strong> = conductivité de la solution en Siemens par mètre (S·m⁻¹)<br>
+        <strong>λᵢ</strong> = conductivité molaire ionique de l'ion i (S·m²·mol⁻¹) — <em>valeur tabulée</em><br>
+        <strong>[Xᵢ]</strong> = concentration molaire de l'ion i
+    </div>
+
+    <div class="note">
+        Pour un soluté simple (M⁺ + X⁻) de concentration C :<br>
+        σ = (λ_M+ + λ_X-) × C
+    </div>
+
+    <div class="attention">
+        <strong>⚠️ ATTENTION AUX UNITÉS (Piège classique) :</strong><br>
+        Dans la loi de Kohlrausch, les concentrations doivent impérativement être converties en mol·m⁻³<br>
+        <strong>Rappel :</strong> 1 mol·L⁻¹ = 1000 mol·m⁻³
+    </div>
+
+    <h4>📊 Déterminer une concentration inconnue :</h4>
+    <div class="procedure">
+        <strong>1. Mesurer la conductivité σ</strong> de la solution<br>
+        <strong>2. Utiliser la loi de Kohlrausch</strong> : σ = (λ₁ + λ₂) × C<br>
+        <strong>3. Isoler C</strong> : C = σ / (λ₁ + λ₂)<br>
+        <strong>4. Convertir les unités</strong> si nécessaire
+    </div>
+
+    <hr>
+
+    <h3>3️⃣ Loi des Gaz Parfaits</h3>
+    <p>Utilisée quand le système est <strong>gazeux</strong>.</p>
+
+    <div class="formula-box">
+        P × V = n × R × T
+    </div>
+
+    <div class="explanation">
+        <strong>P</strong> = pression en Pascals (Pa)<br>
+        <strong>V</strong> = volume en mètres cubes (m³)<br>
+        <strong>n</strong> = quantité de matière (mol)<br>
+        <strong>T</strong> = température en Kelvin (K)<br>
+        <strong>R</strong> = constante des gaz parfaits = 8,314 J·mol⁻¹·K⁻¹
+    </div>
+
+    <div class="note">
+        On peut également l'exprimer ainsi : n = (P × V) / (R × T)
+    </div>
+
+    <hr>
+
+    <!-- Section II -->
+    <h2><span class="chapter-number">II</span>Méthodes Chimiques : Le Titrage (Dosage)</h2>
+
+    <p>Le but est de déterminer la <strong>concentration d'une espèce inconnue</strong> (titrée) en la faisant réagir avec une espèce de concentration connue (titrant).</p>
+
+    <h3>1️⃣ Définition de l'Équivalence</h3>
+    <div class="key-concept">
+        <strong>L'équivalence</strong> est atteinte lorsque les réactifs (titré et titrant) ont été introduits dans les <strong>proportions stœchiométriques</strong> de l'équation de réaction. À ce moment, le réactif titré est totalement consommé.
+    </div>
+
+    <div class="analogy">
+        C'est le moment où on a mis exactement le bon nombre de moles du titrant pour neutraliser exactement tout le titré.
+    </div>
+
+    <h3>2️⃣ Relation à l'Équivalence (LA formule du chapitre)</h3>
+    <p>Pour une réaction de titrage :</p>
+    <div class="formula-box">
+        a·A + b·B → c·C + d·D
+    </div>
+    <p style="text-align: center; margin: 10px 0;"><strong>(A = titré, B = titrant)</strong></p>
+
+    <p>À l'équivalence, en passant aux concentrations (n = C × V) :</p>
+
+    <div class="formula-box">
+        (a × C_A × V_A) / (b × V_E × C_B) = 1
+    </div>
+
+    <p style="text-align: center; margin: 10px 0;"><strong>ou plutôt :</strong></p>
+
+    <div class="formula-box">
+        C_A = (b × V_E × C_B) / (a × V_A)
+    </div>
+
+    <div class="explanation">
+        <strong>C_A</strong> = concentration inconnue à trouver (mol·L⁻¹)<br>
+        <strong>V_A</strong> = volume de solution titrée prélevé (dans le bécher, en mL)<br>
+        <strong>C_B</strong> = concentration du titrant (dans la burette, en mol·L⁻¹)<br>
+        <strong>V_E</strong> = volume équivalent (lu sur la burette à l'équivalence, en mL)<br>
+        <strong>a, b</strong> = coefficients stœchiométriques
+    </div>
+
+    <div class="example">
+        <strong>Exemple simple :</strong> Titrage acide-base avec HCl + NaOH → NaCl + H₂O<br>
+        Ici a = 1 et b = 1, donc : C_acide = (V_E × C_NaOH) / V_acide
+    </div>
+
+    <h3>3️⃣ Caractéristiques d'une Réaction de Titrage</h3>
+    <p>Elle doit être :</p>
+    <ul>
+        <li><strong>Totale (quantitative)</strong> : La réaction doit aller jusqu'au bout, pas de réactif résiduel</li>
+        <li><strong>Rapide</strong> : Pas d'attente interminable</li>
+        <li><strong>Unique</strong> : Pas de réactions parasites qui fausseraient le résultat</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section III -->
+    <h2><span class="chapter-number">III</span>Repérage de l'Équivalence (V_E)</h2>
+
+    <p>Comment trouver V_E graphiquement selon la méthode utilisée ?</p>
+
+    <h3>1️⃣ Titrage pH-métrique (Courbe Sigmoïde)</h3>
+    <p>On trace <strong>pH = f(V_titrant)</strong>. La courbe a une forme caractéristique en S.</p>
+
+    <h4>Méthode des tangentes :</h4>
+    <div class="method-box">
+        <strong>1. Tracer deux tangentes parallèles</strong> de part et d'autre du saut de pH<br>
+        <strong>2. V_E est au milieu</strong> (intersection des deux tangentes avec la courbe)
+    </div>
+
+    <h4>Méthode de la dérivée :</h4>
+    <div class="method-box">
+        <strong>1. Tracer dpH/dV</strong> (la dérivée du pH par rapport au volume)<br>
+        <strong>2. Le pic</strong> (maximum ou minimum) de la courbe dérivée donne V_E<br>
+        <strong>Interprétation :</strong> C'est là où le pH change le plus vite !
+    </div>
+
+    <div class="analogy">
+        La dérivée donne la "pente" instantanée de la courbe pH(V). Le point où cette pente est la plus raide = l'équivalence.
+    </div>
+
+    <hr>
+
+    <h3>2️⃣ Titrage Conductimétrique</h3>
+    <p>On trace <strong>σ = f(V_titrant)</strong>. La courbe est constituée de deux segments de droite.</p>
+
+    <div class="key-concept">
+        <strong>V_E se trouve à l'intersection (rupture de pente)</strong> de ces deux droites.
+    </div>
+
+    <h4>Pourquoi ça change de pente ?</h4>
+    <div class="explanation">
+        Car la <strong>nature des ions majoritaires</strong> dans le bécher change avant et après l'équivalence.<br>
+        <strong>Exemple :</strong> Titrage d'une solution d'HCl par du NaOH<br>
+        • Avant l'équivalence : présence de H⁺ (très conducteurs)<br>
+        • Après l'équivalence : présence de Na⁺ (moins conducteurs)<br>
+        → La conductivité baisse du côté gauche et remonte du côté droit
+    </div>
+
+    <h4>📊 Trouver V_E graphiquement :</h4>
+    <div class="procedure">
+        <strong>1. Prolonger les deux droites</strong> jusqu'à leur intersection<br>
+        <strong>2. Lire l'abscisse</strong> du point d'intersection : c'est V_E
+    </div>
+
+    <hr>
+
+    <h3>3️⃣ Titrage Colorimétrique</h3>
+    <p>On utilise un <strong>indicateur coloré</strong> pour repérer l'équivalence.</p>
+
+    <div class="explanation">
+        <strong>V_E est repéré par le virage de couleur persistant</strong> de la solution<br>
+        <strong>Exemple :</strong> Avec la phénolphtaléine, c'est le changement de incolore → rose (ou rose → incolore)
+    </div>
+
+    <h4>Choix de l'indicateur (pour pH) :</h4>
+    <div class="attention">
+        <strong>⚠️ Important :</strong> Sa zone de virage doit <strong>contenir le pH à l'équivalence (pH_E)</strong><br>
+        Sinon, le virage ne correspondra pas au vrai point d'équivalence !
+    </div>
+
+    <div class="note">
+        <strong>Exemple :</strong> Si pH_E ≈ 8,5 (titrage acide faible par base forte), utiliser la phénolphtaléine (zone 8–10) et pas le méthyle orange (zone 3–4)
+    </div>
+
+    <hr>
+
+    <!-- Section IV -->
+    <h2><span class="chapter-number">IV</span>Calculs Post-titrage (Titre Massique)</h2>
+
+    <p>Souvent, l'exercice ne s'arrête pas à C_A. On demande le <strong>pourcentage massique</strong> (ex: degré d'un vinaigre).</p>
+
+    <h3>1️⃣ Concentration Massique (C_m ou t)</h3>
+
+    <div class="formula-box">
+        C_m = C × M
+    </div>
+
+    <div class="explanation">
+        <strong>C_m</strong> = concentration massique (g·L⁻¹)<br>
+        <strong>C</strong> = concentration molaire (mol·L⁻¹) — <em>trouvée par titrage</em><br>
+        <strong>M</strong> = masse molaire (g·mol⁻¹)
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Si C = 0,1 mol/L et M(acide acétique) = 60 g/mol<br>
+        C_m = 0,1 × 60 = 6 g/L
+    </div>
+
+    <hr>
+
+    <h3>2️⃣ Pourcentage Massique (w ou P_m)</h3>
+
+    <p>C'est la <strong>masse de soluté pour 100g de solution</strong>.</p>
+
+    <div class="formula-box">
+        P_m (%) = (C_m × 100) / ρ_solution
+    </div>
+
+    <div class="explanation">
+        <strong>P_m</strong> = pourcentage massique (%)<br>
+        <strong>C_m</strong> = concentration massique (g·L⁻¹)<br>
+        <strong>ρ_solution</strong> = masse volumique de la solution (g·L⁻¹) — <em>souvent ≈ 1000 g/L pour les solutions diluées</em>
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Pour un vinaigre<br>
+        C_m = 6 g/L, ρ = 1000 g/L<br>
+        P_m = (6 × 100) / 1000 = 0,6% d'acide acétique
+    </div>
+
+    <hr>
+
+    <!-- Tips -->
+    <div class="tips">
+        <h3>💡 ASTUCE "FACTEUR DE DILUTION" (Oubli n°1 au BAC !)</h3>
+        
+        <div class="attention">
+            <strong>Attention !</strong> Souvent dans les exercices, on dilue la solution commerciale avant de la titrer (car trop concentrée).
+        </div>
+
+        <h4>Exemple complet :</h4>
+        <div class="tip-item"><strong>Énoncé :</strong> On dilue 10 fois le vinaigre commercial (F = 10) avant le dosage</div>
+        
+        <div class="tip-item"><strong>Étape 1 :</strong> Calculer C_diluée avec la formule de l'équivalence</div>
+        
+        <div class="tip-item"><strong>Étape 2 (CRUCIAL) :</strong> Remonter à la solution mère : C_mère = C_diluée × F = C_diluée × 10</div>
+
+        <div class="tip-item"><strong>Étape 3 :</strong> Utiliser C_mère pour les calculs suivants</div>
+
+        <h4 style="margin-top: 20px;">Exemple concret :</h4>
+        <div class="explanation">
+            • Solution mère = vinaigre commercial (très concentré)<br>
+            • On dilue 10× → solution diluée (dosée par titrage)<br>
+            • Titrage donne : C_diluée = 0,6 mol/L<br>
+            • Mais la vraie concentration du vinaigre = 0,6 × 10 = 6 mol/L ✓
+        </div>
+    </div>
+
+    <div class="tips" style="background: #c8e6c9; border-left-color: #388e3c; margin-top: 30px;">
+        <h3 style="color: #1b5e20;">✅ RÉSUMÉ : PROTOCOLE COMPLET D'UN TITRAGE</h3>
+        
+        <div class="tip-item"><strong>1. Choisir la bonne méthode</strong> (pH-métrie, conductivité, colorimétrique)</div>
+        
+        <div class="tip-item"><strong>2. Préparer les solutions</strong> : titrée (concentration inconnue) et titrant (concentration connue)</div>
+        
+        <div class="tip-item"><strong>3. Effectuer le titrage</strong> : ajouter le titrant progressivement jusqu'à l'équivalence</div>
+        
+        <div class="tip-item"><strong>4. Repérer l'équivalence</strong> visuellement (changement de couleur) ou graphiquement (rupture de courbe)</div>
+        
+        <div class="tip-item"><strong>5. Lire V_E</strong> sur la burette</div>
+        
+        <div class="tip-item"><strong>6. Appliquer la formule</strong> : C_A = (b × V_E × C_B) / (a × V_A)</div>
+        
+        <div class="tip-item"><strong>7. Si dilution</strong> : multiplier par le facteur de dilution</div>
+        
+        <div class="tip-item"><strong>8. Convertir si besoin</strong> : concentration massique, pourcentage, etc.</div>
+    </div>
+</div>
+```
+
+</body>
+</html>

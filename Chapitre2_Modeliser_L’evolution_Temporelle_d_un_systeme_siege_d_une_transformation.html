@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de Révision - Évolution Temporelle d'un Système Chimique</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        padding: 40px;
+    }
+
+    h1 {
+        color: #667eea;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background: #667eea;
+        margin: 30px 0;
+    }
+
+    h2 {
+        color: #764ba2;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+    }
+
+    h3 {
+        color: #667eea;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .formula-box {
+        background: #f0f4ff;
+        border-left: 5px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .explanation {
+        background: #fafafa;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #764ba2;
+    }
+
+    .explanation strong {
+        color: #667eea;
+    }
+
+    .attention {
+        background: #fff3cd;
+        border-left: 5px solid #ff9800;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .attention strong {
+        color: #ff9800;
+    }
+
+    .example {
+        background: #e8f5e9;
+        border-left: 5px solid #4caf50;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .analogy {
+        background: #e3f2fd;
+        border-left: 5px solid #2196f3;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .tips {
+        background: #f3e5f5;
+        border-left: 5px solid #9c27b0;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .tips h3 {
+        color: #9c27b0;
+        margin-top: 0;
+    }
+
+    .tip-item {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .tip-item::before {
+        content: "✓ ";
+        color: #9c27b0;
+        font-weight: bold;
+        margin-left: -20px;
+        margin-right: 8px;
+    }
+
+    .note {
+        background: #fff9e6;
+        border-left: 4px solid #fbc02d;
+        padding: 10px 12px;
+        margin: 8px 0;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .chapter-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #667eea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .method-box {
+        background: #fce4ec;
+        border-left: 5px solid #e91e63;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+    }
+
+    .method-box strong {
+        color: #c2185b;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    li {
+        margin: 8px 0;
+        line-height: 1.6;
+    }
+
+    .key-concept {
+        background: #ffe0b2;
+        border-left: 5px solid #ff6f00;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .key-concept strong {
+        color: #e65100;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <h1>📚 FICHE DE RÉVISION : ÉVOLUTION TEMPORELLE D'UN SYSTÈME CHIMIQUE</h1>
+        <p class="subtitle">Niveau : Terminale Générale - Spécialité Physique-Chimie</p>
+
+```
+    <hr>
+
+    <!-- Section I -->
+    <h2><span class="chapter-number">I</span>Vitesses de Disparition et d'Apparition</h2>
+
+    <p>Pour une transformation chimique se déroulant dans un volume <strong>V constant</strong> (solution aqueuse généralement).</p>
+
+    <h3>1️⃣ Vitesse volumique de disparition d'un réactif (R)</h3>
+    <p>C'est la vitesse à laquelle la concentration du réactif diminue.</p>
+
+    <div class="formula-box">
+        v_disp(R) = − d[R]/dt
+    </div>
+
+    <div class="explanation">
+        <strong>v_disp(R)</strong> = vitesse de disparition en mol·L⁻¹·s⁻¹<br>
+        <strong>d[R]/dt</strong> = dérivée de la concentration par rapport au temps (pente de la tangente à la courbe [R] = f(t))<br>
+        <strong>Signe moins (−) :</strong> Car la concentration diminue (la dérivée est négative), mais une vitesse est toujours positive
+    </div>
+
+    <div class="analogy">
+        C'est la pente de la courbe [R](t) : plus la pente est raide, plus vite le réactif disparaît !
+    </div>
+
+    <h3>2️⃣ Vitesse volumique d'apparition d'un produit (P)</h3>
+    <p>C'est la vitesse à laquelle la concentration du produit augmente.</p>
+
+    <div class="formula-box">
+        v_app(P) = + d[P]/dt
+    </div>
+
+    <div class="explanation">
+        <strong>v_app(P)</strong> = vitesse d'apparition en mol·L⁻¹·s⁻¹<br>
+        <strong>Pas de signe moins :</strong> Car la concentration augmente (la dérivée est positive), et c'est déjà positif
+    </div>
+
+    <hr>
+
+    <!-- Section II -->
+    <h2><span class="chapter-number">II</span>Loi de Vitesse d'Ordre 1</h2>
+
+    <p><strong>C'est le cœur du chapitre !</strong> On dit qu'une réaction suit une loi de vitesse d'ordre 1 par rapport au réactif R si la vitesse de disparition est proportionnelle à la concentration de ce réactif.</p>
+
+    <h3>1️⃣ L'équation différentielle</h3>
+    <p>En remplaçant v_disp par sa définition, on obtient :</p>
+
+    <div class="formula-box">
+        − d[R]/dt = k × [R](t)
+    </div>
+
+    <div class="explanation">
+        <strong>k</strong> = constante de vitesse (en s⁻¹ pour l'ordre 1)<br>
+        <strong>[R](t)</strong> = concentration du réactif à l'instant t<br>
+        <strong>Proportionnalité :</strong> Plus [R] est grand, plus la vitesse est grande
+    </div>
+
+    <h3>2️⃣ Solution de l'équation (Loi horaire)</h3>
+    <p>L'évolution de la concentration au cours du temps est une exponentielle décroissante :</p>
+
+    <div class="formula-box">
+        [R](t) = [R]₀ × e^(−k×t)
+    </div>
+
+    <div class="explanation">
+        <strong>[R]₀</strong> = concentration initiale du réactif (à t = 0)<br>
+        <strong>k</strong> = constante de vitesse (s⁻¹)<br>
+        <strong>t</strong> = temps (s)
+    </div>
+
+    <div class="key-concept">
+        <strong>📌 Point crucial :</strong> La courbe [R](t) = [R]₀ × e^(−k×t) est une courbe exponentielle qui décroît régulièrement. Elle ressemble à un refroidissement Newton !
+    </div>
+
+    <h3>3️⃣ Comment vérifier qu'une réaction est d'ordre 1 ?</h3>
+    <p>Il y a deux méthodes graphiques à connaître :</p>
+
+    <h4>Méthode 1 : La tangente</h4>
+    <div class="method-box">
+        <strong>Tracer v en fonction de [R].</strong><br>
+        Si on obtient une droite passant par l'origine, c'est d'ordre 1.
+    </div>
+
+    <div class="explanation">
+        Cela vient directement de l'équation : v = k × [R], qui est une droite !
+    </div>
+
+    <h4>Méthode 2 : Le logarithme</h4>
+    <div class="method-box">
+        <strong>Tracer ln([R]) en fonction de t.</strong><br>
+        Si on obtient une droite affine (pente négative −k), c'est d'ordre 1.
+    </div>
+
+    <div class="explanation">
+        Car : ln([R]) = ln([R]₀ × e^(−k×t)) = ln([R]₀) − k × t<br>
+        C'est une droite d'équation y = −k × t + ln([R]₀) avec comme pente −k
+    </div>
+
+    <div class="attention">
+        <strong>⚠️ Attention :</strong> La Méthode 2 (logarithme) est souvent préférée car elle donne une droite plus facile à analyser, même si les données sont légèrement bruitées !
+    </div>
+
+    <hr>
+
+    <!-- Section III -->
+    <h2><span class="chapter-number">III</span>Temps de Demi-Réaction (t₁/₂)</h2>
+
+    <h3>1️⃣ Définition générale</h3>
+    <p>Le temps de demi-réaction est la durée nécessaire pour que <strong>la moitié du réactif limitant initial</strong> ait été consommée (ou pour que l'avancement atteigne la moitié de l'avancement final).</p>
+
+    <div class="formula-box">
+        À t = t₁/₂ :  [R](t₁/₂) = [R]₀ / 2
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Si [R]₀ = 0,10 mol/L, alors à t₁/₂, on a [R] = 0,05 mol/L
+    </div>
+
+    <h3>2️⃣ Cas spécifique de l'Ordre 1</h3>
+    <p>Pour une cinétique d'ordre 1, le temps de demi-réaction est <strong>indépendant de la concentration initiale</strong> (propriété très importante !).</p>
+
+    <div class="formula-box">
+        t₁/₂ = ln(2) / k = 0,693 / k
+    </div>
+
+    <div class="explanation">
+        <strong>k</strong> = constante de vitesse (s⁻¹)<br>
+        <strong>ln(2) ≈ 0,693</strong> = constante mathématique<br>
+        Cette formule permet de trouver k si on lit t₁/₂ sur un graphique
+    </div>
+
+    <div class="key-concept">
+        <strong>💡 Propriété remarquable :</strong> Pour une réaction d'ordre 1, il faut le même temps pour passer de C₀ à C₀/2, puis de C₀/2 à C₀/4, puis de C₀/4 à C₀/8, etc. Ce temps est toujours t₁/₂ !
+    </div>
+
+    <hr>
+
+    <!-- Section IV -->
+    <h2><span class="chapter-number">IV</span>Méthodes de Suivi</h2>
+
+    <p>Pour obtenir la courbe [R] = f(t), on utilise souvent :</p>
+
+    <h3>1️⃣ La Spectrophotométrie (Loi de Beer-Lambert)</h3>
+    <p>Utilisée quand une espèce est colorée.</p>
+
+    <div class="formula-box">
+        A = ε × l × C
+    </div>
+
+    <div class="explanation">
+        <strong>A</strong> = absorbance (sans unité)<br>
+        <strong>ε</strong> = coefficient d'extinction molaire (L·mol⁻¹·cm⁻¹)<br>
+        <strong>l</strong> = longueur du chemin optique (cm)<br>
+        <strong>C</strong> = concentration molaire (mol/L)
+    </div>
+
+    <div class="note">
+        Comme A est proportionnel à C, la courbe A(t) a <strong>exactement la même allure</strong> que C(t). On peut tracer A(t) à la place de C(t) !
+    </div>
+
+    <h3>2️⃣ La Loi des Gaz Parfaits</h3>
+    <p>Utilisée quand la réaction produit ou consomme un gaz.</p>
+
+    <div class="formula-box">
+        P × V = n × R × T
+    </div>
+    <p style="text-align: center; margin: 10px 0;"><strong>ou</strong></p>
+    <div class="formula-box">
+        n = (P × V) / (R × T)
+    </div>
+
+    <div class="explanation">
+        <strong>P</strong> = pression du gaz (Pa ou atm)<br>
+        <strong>V</strong> = volume (L)<br>
+        <strong>n</strong> = quantité de matière (mol)<br>
+        <strong>R</strong> = constante des gaz parfaits = 8,314 J·mol⁻¹·K⁻¹<br>
+        <strong>T</strong> = température absolue (K)
+    </div>
+
+    <div class="note">
+        Cette relation permet de relier la pression mesurée à la quantité de matière, et donc d'en déduire la concentration !
+    </div>
+
+    <hr>
+
+    <!-- Section V -->
+    <h2><span class="chapter-number">V</span>Facteurs Cinétiques</h2>
+
+    <p>Ce sont les paramètres qui <strong>modifient la vitesse de réaction</strong> et la valeur de k, mais <strong>ne changent pas l'état final d'équilibre</strong>.</p>
+
+    <h3>1️⃣ La Température</h3>
+    <div class="explanation">
+        Plus elle augmente → plus la réaction est rapide (les chocs sont plus fréquents et efficaces)<br>
+        <strong>Conséquence :</strong> k augmente avec T, donc la réaction s'accélère
+    </div>
+
+    <h3>2️⃣ La Concentration des Réactifs</h3>
+    <div class="explanation">
+        Plus elle est élevée → plus la réaction est rapide au début<br>
+        <strong>Conséquence :</strong> Plus de molécules pour se rencontrer = plus de chocs
+    </div>
+
+    <h3>3️⃣ La Présence d'un Catalyseur</h3>
+    <div class="explanation">
+        Accélère la réaction sans être consommé par le bilan global<br>
+        <strong>Conséquence :</strong> k augmente (on emprunte un chemin réactionnel plus rapide), mais la durée totale est réduite
+    </div>
+
+    <div class="attention">
+        <strong>⚠️ Important :</strong> Aucun de ces facteurs ne change l'état d'équilibre final, seulement la vitesse pour l'atteindre !
+    </div>
+
+    <hr>
+
+    <!-- Tips -->
+    <div class="tips">
+        <h3>💡 ASTUCE POUR LES EXOS BAC</h3>
+        
+        <h4>Déterminer graphiquement le temps de demi-réaction t₁/₂ :</h4>
+        
+        <div class="tip-item"><strong>Repère la valeur initiale</strong> sur l'axe vertical (ex: C₀ = 0,10 mol/L)</div>
+        
+        <div class="tip-item"><strong>Divise cette valeur par 2</strong> (ex: 0,05 mol/L)</div>
+        
+        <div class="tip-item"><strong>Reporte sur la courbe</strong> et lis l'abscisse correspondante : c'est t₁/₂</div>
+
+        <h4 style="margin-top: 20px;">Prouver que c'est d'ordre 1 SANS calculatrice :</h4>
+        
+        <div class="tip-item"><strong>Vérifie que pour passer de C₀/2 à C₀/4, il faut encore la même durée t₁/₂</strong></div>
+        
+        <div class="tip-item">Si ça se reproduit, c'est bien d'ordre 1 (propriété du doublement régulier)</div>
+
+        <h4 style="margin-top: 20px;">Trouver k graphiquement (Méthode du logarithme) :</h4>
+        
+        <div class="tip-item"><strong>Trace ln([R]) en fonction de t</strong> et identifie la droite</div>
+        
+        <div class="tip-item"><strong>Mesure la pente</strong> de cette droite : c'est −k</div>
+        
+        <div class="tip-item"><strong>La valeur de k</strong> est la valeur absolue de la pente (sans le signe −)</div>
+    </div>
+</div>
+```
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de Révision - Énergie et Thermodynamique</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        padding: 40px;
+    }
+
+    h1 {
+        color: #667eea;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background: #667eea;
+        margin: 30px 0;
+    }
+
+    h2 {
+        color: #764ba2;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+    }
+
+    h3 {
+        color: #667eea;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .formula-box {
+        background: #f0f4ff;
+        border-left: 5px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .explanation {
+        background: #fafafa;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #764ba2;
+    }
+
+    .explanation strong {
+        color: #667eea;
+    }
+
+    .attention {
+        background: #fff3cd;
+        border-left: 5px solid #ff9800;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .attention strong {
+        color: #ff9800;
+    }
+
+    .example {
+        background: #e8f5e9;
+        border-left: 5px solid #4caf50;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .analogy {
+        background: #e3f2fd;
+        border-left: 5px solid #2196f3;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .tips {
+        background: #f3e5f5;
+        border-left: 5px solid #9c27b0;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .tips h3 {
+        color: #9c27b0;
+        margin-top: 0;
+    }
+
+    .tip-item {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .tip-item::before {
+        content: "✓ ";
+        color: #9c27b0;
+        font-weight: bold;
+        margin-left: -20px;
+        margin-right: 8px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td:first-child {
+        font-weight: bold;
+        color: #667eea;
+        width: 30%;
+    }
+
+    .note {
+        background: #fff9e6;
+        border-left: 4px solid #fbc02d;
+        padding: 10px 12px;
+        margin: 8px 0;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .chapter-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #667eea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <h1>📚 FICHE DE RÉVISION : L'ÉNERGIE, CONVERSIONS ET TRANSFERTS</h1>
+        <p class="subtitle">Niveau : Terminale Générale - Spécialité Physique-Chimie</p>
+
+```
+    <hr>
+
+    <!-- Section I -->
+    <h2><span class="chapter-number">I</span>Le Premier Principe de la Thermodynamique</h2>
+
+    <p><strong>Concept clé :</strong> L'énergie ne disparaît pas, elle se transforme !</p>
+
+    <h3>Formule fondamentale :</h3>
+    <div class="formula-box">
+        ΔU = W + Q
+    </div>
+
+    <div class="explanation">
+        <strong>ΔU</strong> = variation d'énergie interne du système (en Joules)<br>
+        <strong>W</strong> = travail reçu ou cédé (mécanique ou électrique) en Joules<br>
+        <strong>Q</strong> = chaleur reçue ou cédée (transfert thermique) en Joules
+    </div>
+
+    <h3>⚠️ Convention de signe (CRUCIAL !)</h3>
+    <div class="attention">
+        <strong>L'énergie rentrante</strong> dans le système = <strong style="font-size: 18px;">+</strong><br>
+        <strong>L'énergie sortante</strong> du système = <strong style="font-size: 18px;">−</strong>
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Un glaçon qui reçoit de la chaleur → Q > 0 ; Une casserole qui refroidit → Q < 0
+    </div>
+
+    <hr>
+
+    <!-- Section II -->
+    <h2><span class="chapter-number">II</span>Énergie Interne et Température</h2>
+
+    <h3>1️⃣ Quand la température change (sans fusion/vaporisation)</h3>
+    <p>Pour les solides et liquides, on utilise :</p>
+
+    <div class="formula-box">
+        Q = m × c × ΔT
+    </div>
+    <p style="text-align: center; margin: 10px 0;"><strong>ou avec la capacité totale :</strong></p>
+    <div class="formula-box">
+        Q = C × ΔT
+    </div>
+
+    <div class="explanation">
+        <strong>Q</strong> = énergie thermique en Joules (J)<br>
+        <strong>m</strong> = masse en kilogrammes (kg)<br>
+        <strong>c</strong> = capacité thermique massique (J·kg⁻¹·K⁻¹) — <em>"combien d'énergie pour chauffer 1 kg de 1 K"</em><br>
+        <strong>C</strong> = capacité thermique totale = m × c (J·K⁻¹) — <em>"combien d'énergie pour chauffer cet objet de 1 K"</em><br>
+        <strong>ΔT</strong> = variation de température (K ou °C, c'est pareil pour les différences !)
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Chauffer 2 kg d'eau de 10°C, avec c = 4186 J·kg⁻¹·K⁻¹<br>
+        Q = 2 × 4186 × 10 = 83 720 J
+    </div>
+
+    <h3>2️⃣ Quand il y a changement d'état (fusion, vaporisation...)</h3>
+    <p>À température constante :</p>
+
+    <div class="formula-box">
+        Q = m × L
+    </div>
+
+    <div class="explanation">
+        <strong>Q</strong> = énergie thermique en Joules (J)<br>
+        <strong>m</strong> = masse en kilogrammes (kg)<br>
+        <strong>L</strong> = chaleur latente (J·kg⁻¹) — <em>"énergie par kg pour changer d'état"</em>
+    </div>
+
+    <div class="attention">
+        <strong>Attention au signe :</strong><br>
+        • Fusion ou vaporisation : L > 0 (ça absorbe de l'énergie, endothermique)<br>
+        • Solidification ou liquéfaction : L < 0 (ça libère de l'énergie, exothermique)
+    </div>
+
+    <hr>
+
+    <!-- Section III -->
+    <h2><span class="chapter-number">III</span>Transferts Thermiques</h2>
+
+    <h3>1️⃣ Le Flux Thermique (Φ)</h3>
+    <p>C'est la <strong>puissance</strong> du transfert thermique = la vitesse à laquelle on échange de l'énergie.</p>
+
+    <div class="formula-box">
+        Φ = Q / Δt
+    </div>
+
+    <div class="explanation">
+        <strong>Φ</strong> (phi) = flux thermique en Watts (W) — <em>1 W = 1 J/s</em><br>
+        <strong>Q</strong> = énergie transférée en Joules (J)<br>
+        <strong>Δt</strong> = durée en secondes (s)
+    </div>
+
+    <div class="analogy">
+        Si Q est la quantité d'eau, Φ est le débit du robinet !
+    </div>
+
+    <h3>2️⃣ La Résistance Thermique (R_th)</h3>
+    <p>C'est la capacité d'un matériau à <strong>ralentir</strong> le passage de la chaleur.</p>
+
+    <div class="formula-box">
+        Φ = (T_A − T_B) / R_th
+    </div>
+    <p style="text-align: center; margin: 10px 0;"><strong>ou</strong></p>
+    <div class="formula-box">
+        R_th = (T_A − T_B) / Φ
+    </div>
+
+    <div class="explanation">
+        <strong>R_th</strong> = résistance thermique (K·W⁻¹) — <em>plus elle est grande, moins ça laisse passer la chaleur</em><br>
+        <strong>T_A − T_B</strong> = écart de température entre les deux côtés (K)<br>
+        <strong>Φ</strong> = flux thermique (W)
+    </div>
+
+    <div class="analogy">
+        R_th joue le même rôle que la résistance en électricité, mais pour la chaleur !
+    </div>
+
+    <h3>3️⃣ La Loi de Newton (Convection)</h3>
+    <p>Modélise l'échange de chaleur entre un corps et l'air (ou un fluide) autour.</p>
+
+    <div class="formula-box">
+        Φ = h × S × (T(t) − T_ext)
+    </div>
+
+    <div class="explanation">
+        <strong>h</strong> = coefficient d'échange thermique (W·m⁻²·K⁻¹) — <em>dépend du fluide et des conditions</em><br>
+        <strong>S</strong> = surface d'échange (m²)<br>
+        <strong>T(t)</strong> = température du corps à l'instant t (K)<br>
+        <strong>T_ext</strong> = température du milieu extérieur (K) — <em>supposée constante</em>
+    </div>
+
+    <div class="example">
+        <strong>Exemple :</strong> Un café chaud qui refroidit → (T(t) − T_ext) diminue → Φ diminue → refroidissement plus lent
+    </div>
+
+    <hr>
+
+    <!-- Section IV -->
+    <h2><span class="chapter-number">IV</span>Bilans et Évolution en Température</h2>
+
+    <h3>1️⃣ Bilan de puissance</h3>
+    <p>Pour un système immobile et incompressible :</p>
+
+    <div class="formula-box">
+        dU/dt = Φ_reçue + W_reçu
+    </div>
+
+    <div class="note">
+        La vitesse de variation d'énergie interne = ce qu'on reçoit en chaleur + ce qu'on reçoit en travail
+    </div>
+
+    <h3>2️⃣ Équation différentielle (Refroidissement ou chauffage)</h3>
+    <p>En combinant le bilan et la loi de Newton (quand il n'y a que l'échange thermique) :</p>
+
+    <div class="formula-box">
+        m × c × dT/dt = −h × S × (T(t) − T_ext)
+    </div>
+
+    <p><strong>La solution est :</strong></p>
+
+    <div class="formula-box">
+        T(t) = T_ext + (T₀ − T_ext) × e^(−t/τ)
+    </div>
+
+    <div class="explanation">
+        <strong>T(t)</strong> = température à l'instant t (K)<br>
+        <strong>T_ext</strong> = température extérieure (K)<br>
+        <strong>T₀</strong> = température initiale (K)<br>
+        <strong>τ</strong> = temps caractéristique (s)
+    </div>
+
+    <h3>Le temps caractéristique :</h3>
+
+    <div class="formula-box">
+        τ = (m × c) / (h × S)
+    </div>
+
+    <div class="explanation">
+        Plus τ est <strong>grand</strong> → refroidissement <strong>lent</strong><br>
+        Plus τ est <strong>petit</strong> → refroidissement <strong>rapide</strong>
+    </div>
+
+    <div class="note">
+        À t = τ, la température a perdu environ 63% de son écart par rapport à T_ext<br>
+        À t = 5τ, on est pratiquement à T_ext (≈99% du refroidissement)
+    </div>
+
+    <hr>
+
+    <!-- Section V -->
+    <h2><span class="chapter-number">V</span>Rendement d'une Conversion</h2>
+
+    <p>C'est l'efficacité d'une transformation d'énergie.</p>
+
+    <div class="formula-box">
+        η = E_utile / E_totale
+    </div>
+    <p style="text-align: center; margin: 10px 0;"><strong>ou</strong></p>
+    <div class="formula-box">
+        η = P_utile / P_totale
+    </div>
+
+    <div class="explanation">
+        <strong>η</strong> (eta) = rendement (sans unité, entre 0 et 1, souvent en %)<br>
+        <strong>E_utile</strong> = énergie utile obtenue (J)<br>
+        <strong>E_totale</strong> = énergie totale fournie (J)
+    </div>
+
+    <div class="note">
+        0 ≤ η ≤ 1 (jamais supérieur à 1 pour une conversion réelle !)<br>
+        <strong>Exemple :</strong> Une ampoule LED avec η = 0,80 = 80% signifie que 80% de l'énergie électrique devient de la lumière, 20% devient de la chaleur
+    </div>
+
+    <hr>
+
+    <!-- Tips -->
+    <div class="tips">
+        <h3>🎯 ASTUCES POUR LES EXERCICES</h3>
+        <div class="tip-item"><strong>Toujours identifier :</strong> Quel est le système ? Est-ce un changement de température OU un changement d'état ? Y a-t-il du travail ? De la chaleur ? Les deux ?</div>
+        <div class="tip-item"><strong>Convention de signe :</strong> Dessine une flèche ! Flèche qui rentre = + | Flèche qui sort = −</div>
+        <div class="tip-item"><strong>Vérifier l'homogénéité :</strong> Les unités doivent correspondre avant de calculer</div>
+        <div class="tip-item"><strong>Pour un refroidissement :</strong> C'est toujours de la forme exponentielle qui tend vers T_ext</div>
+    </div>
+</div>
+```
+
+</body>
+</html>
